@@ -1,12 +1,12 @@
 ---
 arch:
-  - amd64
+#  - amd64
   - ppc64le
 services: docker
 language: python
 commpiler: rust
 before_install:
-  - pip install --upgrade pip
+  - pip install --upgrade pip3
 install:
   - pip3 install docker molecule ansible-lint yamllint flake8 openshift jmespath
 script:
